@@ -1,0 +1,550 @@
+{
+	"info": {
+		"_postman_id": "07b24451-ca7f-421a-94ee-bf10d8d5e382",
+		"name": "do",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "country",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}countries/findAll?id=1",
+							"host": [
+								"{{LocalURL}}countries"
+							],
+							"path": [
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"iso\": \"pk\",\r\n    \"nice_name\": \"iso\",\r\n    \"type\": \"1\",\r\n    \"name\": \"Pakistan\",\r\n    \"iso3\": \"iso\",\r\n    \"num_code\": \"92\",\r\n    \"phone_code\": \"92\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}countries/create",
+							"host": [
+								"{{LocalURL}}countries"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"iso\": \"i3\",\r\n    \"nice_name\": \"iso\",\r\n    \"type\": \"iso\",\r\n    \"name\": \"iso\",\r\n    \"iso3\": \"iso\",\r\n    \"num_code\": \"iso\",\r\n    \"phone_code\": \"iso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}countries/update",
+							"host": [
+								"{{LocalURL}}countries"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}countries/destroy?id=1",
+							"host": [
+								"{{LocalURL}}countries"
+							],
+							"path": [
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}cities/findAll?id=1",
+							"host": [
+								"{{LocalURL}}cities"
+							],
+							"path": [
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"name\": \"Islamabad\",\r\n    \"title\": \"Islamabad\",\r\n    \"description\": \"Islamabad\",\r\n    \"country_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}cities/create",
+							"host": [
+								"{{LocalURL}}cities"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"iso\": \"i3\",\r\n    \"nice_name\": \"iso\",\r\n    \"type\": \"iso\",\r\n    \"name\": \"iso\",\r\n    \"iso3\": \"iso\",\r\n    \"num_code\": \"iso\",\r\n    \"phone_code\": \"iso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}cities/update",
+							"host": [
+								"{{LocalURL}}cities"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}cities/destroy?id=1",
+							"host": [
+								"{{LocalURL}}cities"
+							],
+							"path": [
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DoctorCategories",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}doctorCategories/findAll?id=1",
+							"host": [
+								"{{LocalURL}}doctorCategories"
+							],
+							"path": [
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"name\": \"Islamabad\",\r\n    \"title\": \"Islamabad\",\r\n    \"description\": \"Islamabad\",\r\n    \"country_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}doctorCategories/create",
+							"host": [
+								"{{LocalURL}}doctorCategories"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"iso\": \"i3\",\r\n    \"nice_name\": \"iso\",\r\n    \"type\": \"iso\",\r\n    \"name\": \"iso\",\r\n    \"iso3\": \"iso\",\r\n    \"num_code\": \"iso\",\r\n    \"phone_code\": \"iso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}doctorCategories/update",
+							"host": [
+								"{{LocalURL}}doctorCategories"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}cities/doctorCategories?id=1",
+							"host": [
+								"{{LocalURL}}cities"
+							],
+							"path": [
+								"doctorCategories"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hospital",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}hospitals/findAll?id=1",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Islamabad\",\r\n    \"phoneNumber\": \"phoneNumber\",\r\n    \"description\": \"Islamabad\",\r\n    \"country_id\": 1,\r\n    \"city_id\": 1,\r\n    \"startTime\": \"startTime\",\r\n    \"endTime\": \"endTime\",\r\n    \"address\": \"address\",\r\n    \"email\": \"email\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}hospitals/create",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Frooq Hospital\",\r\n    \"phoneNumber\": \"phoneNumber\",\r\n    \"description\": \"Islamabad\",\r\n    \"country_id\": 1,\r\n    \"city_id\": 1,\r\n    \"startTime\": \"startTime\",\r\n    \"endTime\": \"endTime\",\r\n    \"address\": \"address\",\r\n    \"email\": \"email\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}hospitals/update",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}hospitals/destroy?id=1",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}users/findAll?id=1",
+							"host": [
+								"{{LocalURL}}users"
+							],
+							"path": [
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Islamabad\",\r\n    \"description\": \"Islamabad\",\r\n    \"country\": \"country\",\r\n    \"city\": \"city\",\r\n    \"age\": 1,\r\n    \"gender\": \"Male\",\r\n    \"phone_number\": \"phone_number\",\r\n    \"email\": \"email\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}users/create",
+							"host": [
+								"{{LocalURL}}users"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Hasan Kalim\",\r\n    \"description\": \"Islamabad\",\r\n    \"country\": \"country\",\r\n    \"city\": \"city\",\r\n    \"age\": 1,\r\n    \"gender\": \"Male\",\r\n    \"phone_number\": \"phone_number\",\r\n    \"email\": \"email\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LocalURL}}hospitals/update",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{LocalURL}}hospitals/destroy?id=1",
+							"host": [
+								"{{LocalURL}}hospitals"
+							],
+							"path": [
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "LocalURL",
+			"value": "http://localhost:3020/api/"
+		}
+	]
+}
