@@ -1,24 +1,24 @@
-require('dotenv').config()
+require('dotenv').config();
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const cors = require('cors')
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const registerRouters = require('./Modules/')
-const { successResponse } = require('./Helpers/response')
-console.log("before db service")
-const dbConnection= require('./dbService')
-const {tables} = require('./Models/index')
+const registerRouters = require('./Modules/');
+const { successResponse } = require('./Helpers/response');
+console.log('before db service');
+const dbConnection = require('./dbService');
+const { tables } = require('./Models/index');
 const app = express();
 
-app.use(cors())
+app.use(cors());
 
 //  create db connection
 dbConnection();
-// CREATE TABLES 
+// CREATE TABLES
 
-tables(true, false,false)
+tables(true, false, false);
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');
@@ -29,11 +29,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
-  return successResponse("Welcome to () API",[],res)
-})
+  return successResponse('Welcome to () API', [], res);
+});
 
 // register all routes
-registerRouters(app)
+registerRouters(app);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
