@@ -1,0 +1,9 @@
+create a file name .env in the root folder with the following with your own setting values:
+
+ENV=prod
+PORT=3020
+DB_NAME=elutag_pricing_db
+DB_USERNAME=root
+DB_PASSWORD=
+SECRETE_KEY=dedefefw39ru9t0g459rbvwjcbxloq;
+HOST=localhost:3020
